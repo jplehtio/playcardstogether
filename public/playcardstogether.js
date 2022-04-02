@@ -34,5 +34,17 @@ function setCardContent(cardtitle, carddescription){
 	for(var i = 0; i < cardTitleElements.length; i++){
 		cardTitleElements[i].innerHTML = cardtitle;
 		cardDescriptionElements[i].innerHTML = carddescription;
-	}	
+	}
+}
+
+var currentCard = 0;
+
+function onCardClick() {
+	if (currentCard >= cardDeck.length) {
+		setCardContent("Game finished", "Start new game by refreshing the page");
+		return;
+    }
+
+	setCardContent(cardDeck[currentCard].title, cardDeck[currentCard].description);
+	currentCard++;
 }

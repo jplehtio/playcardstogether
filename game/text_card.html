@@ -1,0 +1,24 @@
+<script src="playcardstogether.js"></script>
+
+<div class="card" onclick="onCardClick()">
+    <div id="cardtop">
+        <div class="cardtextarea">TOP</div>
+    </div>
+    <div id="cardmiddle" class="cardmiddle">
+        <div id="cardleft">
+            <div id="cardleftcontent" class="cardtextarea">LEFT</div>
+        </div>
+        <div id="cardright">
+            <div id="cardrightcontent" class="cardtextarea">RIGHT</div>
+        </div>
+    </div>
+    <div id="cardbottom">
+        <div class="cardtextarea">BOTTOM</div>
+    </div>
+</div>
+
+<script>
+    initializeCard();
+    setCardContent("Start game", "Start flipping cards by tapping the screen");
+    setCardStyleDimensions();
+</script>
